@@ -306,6 +306,55 @@ customer-churn-intelligence/
 ![Customer Segmentation](assets/Customer_Segmentation.PNG)
 ---
 
+## 📊 Model Performance
+
+Several classification models were evaluated using accuracy, precision, recall, F1-score, and ROC-AUC.
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| XGBoost | 0.8020 | 0.6568 | 0.5321 | 0.5879 | **0.8453** |
+| Logistic Regression | **0.8027** | 0.6611 | 0.5267 | 0.5863 | 0.8428 |
+| Gradient Boosting | 0.8013 | **0.6667** | 0.5027 | 0.5732 | 0.8427 |
+| Random Forest | 0.7871 | 0.6217 | 0.5053 | 0.5575 | 0.8229 |
+| SVM | 0.7857 | 0.6429 | 0.4332 | 0.5176 | 0.7965 |
+| Decision Tree | 0.7495 | 0.5283 | 0.5241 | 0.5262 | 0.6770 |
+
+XGBoost achieved the highest ROC-AUC, making it the selected model for the final churn prediction pipeline.
+
+## 🏗️ Project Architecture
+
+```text
+Raw Customer Data
+        │
+        ▼
+Data Cleaning & Preprocessing
+        │
+        ├───────────────┐
+        ▼               ▼
+Churn Prediction    Customer Segmentation
+        │               │
+        ▼               ▼
+Model Comparison     K-Means Clustering
+        │               │
+        ▼               ▼
+XGBoost +             Customer
+Threshold             Profiles
+Optimization
+        │
+        └───────┬───────┘
+                ▼
+        Streamlit Application
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+Churn Prediction   Segmentation
+        │                │
+        └───────┬────────┘
+                ▼
+        Business Insights
+
+
+
 ## ⚙️ Installation
 
 Clone the repository:
