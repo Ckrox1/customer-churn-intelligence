@@ -291,7 +291,19 @@ customer-churn-intelligence/
     ├── churn_prediction.png
     └── customer_segmentation.png
 ```
+## 📸 Application Screenshots
 
+### Dashboard
+
+![Dashboard](assets/Dashboard.PNG)
+
+### Churn Prediction
+
+![Churn Prediction](assets/Churn_prediction.PNG)
+
+### Customer Segmentation
+
+![Customer Segmentation](assets/Customer_Segmentation.PNG)
 ---
 
 ## ⚙️ Installation
