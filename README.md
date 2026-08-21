@@ -1,10 +1,15 @@
 # Customer Churn Intelligence
 
+
 An end-to-end machine learning application for **customer churn prediction and customer segmentation**, built with Python and Streamlit.
 
 This project combines supervised and unsupervised machine learning to identify customers who are likely to churn and discover meaningful customer segments based on behavior, spending, tenure, and service adoption.
 
 ---
+
+## 🚀 Live Demo
+
+[![Open App](https://img.shields.io/badge/Live%20Demo-Streamlit-red?logo=streamlit)](https://customer-churn-intelligence-lhtpl22ek35w7eqeisgjmj.streamlit.app)
 
 ## 🚀 Project Overview
 
@@ -360,7 +365,7 @@ Churn Prediction   Segmentation
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/customer-churn-intelligence.git
+git clone https://github.com/Ckrox1/customer-churn-intelligence.git
 cd customer-churn-intelligence
 ```
 
